@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+  <title>Devchallenges - My team page</title>
+
+  <style>
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video,
+    hr {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    /* variables */
+    :root {
+      --font: "Poppins", sans-serif;
+      --bg-color: #F2F2F2;
+      --text-color: #000000;
+
+      --text-xs: 0.75rem;
+      --text-sm: 0.875rem;
+      --text-md: 1rem;
+      --text-lg: 1.5rem;
+      --text-xl: 2rem;
+
+      --space-sm: 0.5rem;
+      --space-md: 1rem;
+      --space-lg: 2rem;
+
+      --rounded-sm: 8px;
+      --rounded: 16px;
+    }
+
+    /* page styles */
+    body {
+      font-family: var(--font);
+      background-color: var(--bg-color);
+    }
+
+    .panel {
+      /* // Centered block elment */
+      margin: var(--space-lg) auto;
+
+      max-width: 960px;
+      padding: var(--space-sm);
+      border-radius: var(--rounded);
+    }
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: calc(var(--space-lg) * 2);
+    }
+
+    .heading h1 {
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-lg);
+    }
+
+    .teamdesc {
+      width: 40%;
+    }
+
+    .figureCollection {
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: calc(var(--space-lg) * 2);
+      column-gap: calc(var(--space-lg));
+
+    }
+
+    .figureCard__img {
+      display: flex;
+    }
+
+    .figureCard__img__src {
+      margin-right: 10px;
+      margin-bottom: 15px;
+    }
+
+
+    .figureCard__title {
+      writing-mode: vertical-rl;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    .figure__caption {
+      font-weight: 600;
+    }
+
+    .responsive {
+      width: 100%;
+      max-width: 238px;
+      height: auto;
+      object-fit: contain;
+    }
+
+
+
+
+    /* three columns */
+    @media screen and (min-width: 878px) {
+
+      #saba,
+      #griff {
+        padding-top: 100px;
+      }
+    }
+
+    /* two column */
+    @media screen and (max-width: 877px) and (min-width: 577px) {
+
+      #saba,
+      #skylah,
+      #stan {
+        padding-top: 100px;
+      }
+    }
+
+    /* one column */
+    @media screen and (max-width: 576px) {
+      .heading {
+        flex-direction: column;
+      }
+
+      .teamdesc {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="panel">
+
+    <div class="heading">
+      <h1>The creative crew</h1>
+      <div class="teamdesc">
+        <p><strong>WHO WE ARE</strong></p><br>
+        <p>We are team of creatively diverse. driven. innovative individuals working in various locations from the
+          world.</p>
+      </div>
+    </div>
+
+    <div class="figureCollection">
+      <div id="bill" class="figureCard">
+        <div class="figureCard__img">
+          <div class="figureCard__img__src">
+            <img class="responsive" src="images/photo1.png" alt="">
+          </div>
+          <span class="figureCard__title">Product Owner</span>
+        </div>
+        <span class="figure__caption">Bill Mahoney</span>
+      </div>
+      <div id="saba" class="figureCard">
+        <div class="figureCard__img">
+          <div class="figureCard__img__src">
+            <img class="responsive" src="images/photo2.png" alt="">
+          </div>
+          <span class="figureCard__title">Product Owner</span>
+        </div>
+        <span class="figure__caption">Saba Cabrera</span>
+      </div>
+      <div id="shae" class="figureCard">
+        <div class="figureCard__img">
+          <div class="figureCard__img__src">
+            <img class="responsive" src="images/photo3.png" alt="">
+          </div>
+          <span class="figureCard__title">Product Owner</span>
+        </div>
+        <span class="figure__caption">Shae Le</span>
+      </div>
+      <div id="skylah" class="figureCard">
+        <div class="figureCard__img">
+          <div class="figureCard__img__src">
+            <img class="responsive" src="images/photo4.png" alt="">
+          </div>
+          <span class="figureCard__title">Product Owner</span>
+        </div>
+        <span class="figure__caption">Skylah Lu</span>
+      </div>
+      <div id="griff" class="figureCard">
+        <div class="figureCard__img">
+          <div class="figureCard__img__src">
+            <img class="responsive" src="images/photo5.png" alt="">
+          </div>
+          <span class="figureCard__title">Product Owner</span>
+        </div>
+        <span class="figure__caption">Griff Richards</span>
+      </div>
+      <div id="stan" class="figureCard">
+        <div class="figureCard__img">
+          <div class="figureCard__img__src">
+            <img class="responsive" src="images/photo6.png" alt="">
+          </div>
+          <span class="figureCard__title">Product Owner</span>
+        </div>
+        <span class="figure__caption">Stan John</span>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
