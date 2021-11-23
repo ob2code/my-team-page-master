@@ -168,15 +168,15 @@
     }
 
     .figureCard__img__src {
-      margin-right: 10px;
-      margin-bottom: 15px;
+      margin-right: var(--space-sm);
+      margin-bottom: var(--space-md:);
     }
 
 
     .figureCard__title {
       writing-mode: vertical-rl;
       text-transform: uppercase;
-      font-size: 12px;
+      font-size: var(--text-xs);
     }
 
     .figure__caption {
@@ -191,7 +191,21 @@
     }
 
 
+    .attribution {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: #A9A9A9;
+    }
 
+    .attribution a {
+      text-decoration: none;
+      color: #A9A9A9;
+      font-weight: bold;
+    }
 
     /* three columns */
     @media screen and (min-width: 878px) {
@@ -253,7 +267,7 @@
           <div class="figureCard__img__src">
             <img class="responsive" src="images/photo2.png" alt="">
           </div>
-          <span class="figureCard__title">Product Owner</span>
+          <span class="figureCard__title">Art director</span>
         </div>
         <span class="figure__caption">Saba Cabrera</span>
       </div>
@@ -262,7 +276,7 @@
           <div class="figureCard__img__src">
             <img class="responsive" src="images/photo3.png" alt="">
           </div>
-          <span class="figureCard__title">Product Owner</span>
+          <span class="figureCard__title">Tech Lead</span>
         </div>
         <span class="figure__caption">Shae Le</span>
       </div>
@@ -271,7 +285,7 @@
           <div class="figureCard__img__src">
             <img class="responsive" src="images/photo4.png" alt="">
           </div>
-          <span class="figureCard__title">Product Owner</span>
+          <span class="figureCard__title">UX Designer</span>
         </div>
         <span class="figure__caption">Skylah Lu</span>
       </div>
@@ -280,7 +294,7 @@
           <div class="figureCard__img__src">
             <img class="responsive" src="images/photo5.png" alt="">
           </div>
-          <span class="figureCard__title">Product Owner</span>
+          <span class="figureCard__title">Developer</span>
         </div>
         <span class="figure__caption">Griff Richards</span>
       </div>
@@ -289,7 +303,7 @@
           <div class="figureCard__img__src">
             <img class="responsive" src="images/photo6.png" alt="">
           </div>
-          <span class="figureCard__title">Product Owner</span>
+          <span class="figureCard__title">Developer</span>
         </div>
         <span class="figure__caption">Stan John</span>
       </div>
@@ -298,7 +312,7 @@
 
   </div>
 
-
+  <div class="attribution">created by <a href="https://twitter.com/ob2code">ob2code</a> - devChallenges.io</div>
 
 
 
